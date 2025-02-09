@@ -1,0 +1,17 @@
+{
+  "name": "moment-1",
+  "version": "1.0.0",
+  "author": "Helmer Bergström",
+  "license": "ISC",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "sharp": "^0.33.5"
+  }
+}

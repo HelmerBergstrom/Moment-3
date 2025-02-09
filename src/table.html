@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment 2 - DT200G </title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html"> INFO </a></li>
+                <li><a href="picture.html"> BILDER </a></li>
+                <li><a href="process.html"> ARBETSPROCESS </a></li>
+                <li><a href="#"> TABELL </a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <button class="hamburger" aria-label="Öppna menyn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="mobile-menu">
+                <li><a href="index.html"> INFO </a></li>
+                <li><a href="picture.html"> BILDER </a></li>
+                <li><a href="process.html"> ARBETSPROCESS </a></li>
+                <li><a href="#"> Tabell </a></li>
+            </ul>
+        </nav>
+    </header>
+<main id="table-page">
+    <h1> Kurssökare </h1>
+    <input type="text" id="search" placeholder="Sök kurs...">
+    <div id="error">
+
+    </div>
+    <table id="table">
+        <thead>
+            <tr>
+                <th class="sort" data-column="code">Kurskod</th>
+                <th class="sort" data-column="coursename">Kursnamn</th>
+                <th class="sort" data-column="progression">Progression</th>
+                <th id="plans"> Kursplan </th>
+            </tr>
+        </thead>
+        <tbody id="courses">
+        </tbody>
+    </table>
+
+</main>
+</body>
+</html>
