@@ -1,2 +1,2 @@
-# MOMENT 2 - DT211G
-##### Skapande av sökfunktion och tabell med fetchAPI, ECMAscript och diverse funktioner.
+# MOMENT 3 - DT211G
+##### Skapande av en enklare fiktiv webbplats med SASS.

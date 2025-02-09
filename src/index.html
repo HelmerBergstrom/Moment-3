@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moment 2 - DT200G </title>
+    <title>Moment 3 - DT200G </title>
 
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" type="module"></script>
@@ -12,10 +12,8 @@
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="#"> INFO </a></li>
-                <li><a href="picture.html"> BILDER </a></li>
-                <li><a href="process.html"> ARBETSPROCESS </a></li>
-                <li><a href="table.html"> TABELL </a></li>
+                <li><a href="#"> STARTSIDA </a></li>
+                <li><a href="sass.html"> BILDER </a></li>
             </ul>
         </nav>
 
@@ -26,45 +24,37 @@
                 <span></span>
             </button>
             <ul class="mobile-menu">
-                <li><a href="#"> INFO </a></li>
-                <li><a href="picture.html"> BILDER </a></li>
-                <li><a href="process.html"> ARBETSPROCESS </a></li>
-                <li><a href="table.html"> TABELL </a></li>
+                <li><a href="#"> STARTSIDA </a></li>
+                <li><a href="sass.html"> SASS </a></li>
             </ul>
         </nav>
     </header>
 
-<main class="info-page-main">
-    <h1> Om uppgiften</h1>
-        <p>
-            Uppgiften går ut på att skapa en demowebbplats med hjälp av automatiserande 
-            verktyg. GitHub ska användas kontinuerligt och versionshantering likaså. GitHub ska
-            även användas för att automatisera publiceringsprocessen.
-        </p>
-        <br>
-        <p>
-            .gitignore-fil ska skapas för att exkludera filer som inte ska versionhanteras.
-        </p>
-        <br>
-        <p>
-            Webbplatsen ska ha åtminstone tre undersidor:
-        </p>
-        <ul>
-            <li> Startsida med info om uppgiften(denna sida) </li>
-            <li><a href="picture.html"> Undersida för bilder med minst fem stycken fotografier</a></li>
-            <li><a href="process.html"> En undersida för publicering där du beskriver din skapande arbetsprocess.</a></li>
-        </ul>
+<main>
 
 
-        <h2> Punktlista för vad uppgiften ska innehålla: </h2>
-        <ul>
-            <li> Minifiering av CSS</li>
-            <li> Transpilering och minifiering av JavaScript</li>
-            <li> Minifiering av HTML </li>
-            <li> Optimering av bilder automatiskt vid uppdatering av bilder till Webp, avif eller liknande. </li>
-            <li> Bakåtkompabilitet för att stödja så många webbläsare som möjligt. </li>
-            <li> Kopiering av arbetsfiler till mapp för publicering med optimerade filer. </li>
-        </ul>
+
+
+    
+    
+    
+    
+    
+    <section>
+        <h1> Bilder </h1>
+        <picture>
+            <source srcset="pics/cabbin.png?as=avif&width=500" type="image/avif"/>
+            <source srcset="pics/cabbin.png?as=webp&width=500" type="image/webp"/>
+            <img src="pics/cabbin.png?width=500" alt="Träd, gräsmatta och en sjö i bakgrunden.">
+        </picture>
+        <div>
+            <picture>
+                <source srcset="pics/cyprus.png?as=avif&width=500" type="image/avif"/>
+                <source srcset="pics/cyprus.png?as=webp&width=500" type="image/webp"/>
+                <img src="pics/cyprus.png?width=500" alt="Solnedgång i Cypern.">
+            </picture>
+        </div>
+    </section>  
 
 </main>
 
