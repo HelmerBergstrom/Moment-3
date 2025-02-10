@@ -1,16 +1,24 @@
-/* Styling för webbplatsen. Header, media quieries, formulär osv.*/
 
-$primary-color: rgb(71, 71, 71);
+$primary-color: hsl(0, 0%, 84%);
+$dark-mode-color: darken($primary-color, 50%);
 
-$menu-background: rgb(120, 120, 120);
+$menu-background: rgb(119, 119, 119);
+$dark-mode-menu: darken($menu-background, 50%);
 $menu-text-color: white;
 
-body {
-    background-color: $primary-color;
+$lightTheme: true;
+
+.theme {
+    background: $primary-color;
+    color: black;
 }
 
 h1 {
     text-align: center;
+    padding: 30px;
+}
+h2 {
+    @extend h1;
 }
 
 .menu {
@@ -19,7 +27,6 @@ h1 {
     justify-content: center;
     gap: 50px;
     padding: 30px;
-    margin-top: 20px;
 
     li {
         list-style: none;
@@ -59,6 +66,66 @@ h1 {
     background-color: rgb(55, 55, 55);
     padding: 10px;
 }
+#pics {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+@mixin picture($border, $circle) {
+    border-width: $border;
+    border-style: solid;
+    border-color: white;
+
+    @if $circle {
+        margin-top: 50px;
+        border-radius: 50%;
+    } @else {
+        margin-top: 10px;
+    }
+}
+
+.first-pic {
+    @include picture(10px, true);
+}
+.second-pic {
+    @include picture(10px, false);
+}
+
+.explanation {
+    display: flex;
+    justify-content: center;
+    div {
+        width: 500px;
+        margin: 20px;
+    }
+} 
+
+
+footer {
+    @extend h1;
+
+    p {
+        text-transform: uppercase;
+    }
+
+} 
+
+@media (prefers-color-scheme: dark) {
+    .theme {
+        background-color: $dark-mode-color;
+        color: white;
+    }
+    .menu {
+        background-color: $dark-mode-menu;
+    }
+    .first-pic {
+        border-color: $dark-mode-menu;
+    }
+    .second-pic {
+        border-color: $dark-mode-menu;
+    }
+}
 
 @media (max-width: 1000px) {
     .menu {
@@ -70,5 +137,13 @@ h1 {
         position: absolute;
         right: 0;
         top: 100px;
+    }
+    #pics {
+        flex-direction: column;
+        align-items: center;
+    }
+    .explanation {
+        flex-direction: column;
+        align-items: center;
     }
 }

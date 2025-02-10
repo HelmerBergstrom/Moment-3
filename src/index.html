@@ -36,25 +36,43 @@
         </nav>
     </header>
 
-<main>
-    <h1> STARTSIDA </h1>
-        <button id="theme"> Byt färgtema </button>
-        <section>
-        <picture>
+<main class="theme">
+    <section>
+        <h1> STARTSIDA </h1>
+        <article class="explanation">
+            <div>
+                <p>
+                    Den äggformade bilden är tagen i Hälsningland. Bakom kameran stod jag på altanen
+                    som tillhör min mormor och morfars stuga. Sjön heter "Långsjön" och
+                    här har jag tillbringat många dagar, men inte tillräckligt många.
+                </p>
+            </div>
+            <div>
+                <p>
+                    Den fyrkantiga bilden är tagen i Cypern. Bakom kameran stod jag med min
+                    sambo bredvid mig, nyäten och mätt.
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <article id="pics">
+        <picture >
             <source srcset="pics/cabbin.png?as=avif&width=500" type="image/avif"/>
             <source srcset="pics/cabbin.png?as=webp&width=500" type="image/webp"/>
-            <img src="pics/cabbin.png?width=500" alt="Träd, gräsmatta och en sjö i bakgrunden.">
+            <img src="pics/cabbin.png?width=500" class="first-pic" alt="Träd, gräsmatta och en sjö i bakgrunden.">
         </picture>
-        <div>
-            <picture>
-                <source srcset="pics/cyprus.png?as=avif&width=500" type="image/avif"/>
-                <source srcset="pics/cyprus.png?as=webp&width=500" type="image/webp"/>
-                <img src="pics/cyprus.png?width=500" alt="Solnedgång i Cypern.">
-            </picture>
-        </div>
-    </section>  
+        <picture>
+            <source srcset="pics/cyprus.png?as=avif&width=500" type="image/avif"/>
+            <source srcset="pics/cyprus.png?as=webp&width=500" type="image/webp"/>
+            <img src="pics/cyprus.png?width=500" class="second-pic" alt="Solnedgång i Cypern.">
+        </picture>
+    </article>  
 
 </main>
 
+<footer class="theme">
+    <p> Helmer Bergström || 2025</p>
+</footer>
 </body>
 </html>
