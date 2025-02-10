@@ -1,31 +1,4 @@
-$primary-color: rgb(71, 71, 71);
-$primary-font: Helvetica, sans-serif;
-
-$menu-background: rgb(120, 120, 120);
-$menu-font: Arial, sans-serif;
-$menu-text-color: white;
-
-body {
-    background-color: $primary-color;
-}
-.menu {
-    font-family: $menu-font;
-    background-color: $menu-background;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding: 30px;
-
-    li {
-        list-style: none;
-        font-size: 30px;
-    }
-    a {
-        color: $menu-text-color;
-        text-decoration: none;
-    }
-}
-.mobile-menu, 
-.hamburger {
-    display: none;
-}
+@use "reset";
+@use "components";
+@use "layout";
+@use "base";

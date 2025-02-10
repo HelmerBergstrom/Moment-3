@@ -1,0 +1,74 @@
+/* Styling för webbplatsen. Header, media quieries, formulär osv.*/
+
+$primary-color: rgb(71, 71, 71);
+
+$menu-background: rgb(120, 120, 120);
+$menu-text-color: white;
+
+body {
+    background-color: $primary-color;
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu {
+    background-color: $menu-background;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+    margin-top: 20px;
+
+    li {
+        list-style: none;
+        padding: 10px;
+        color: $menu-text-color;
+    }
+    li:hover {
+        background-color: rgb(55, 55, 55);
+    }
+    a {
+        color: $menu-text-color;
+        text-decoration: none;
+    }
+}
+
+.mobile-menu {
+    display: none;
+    background-color: $menu-background;
+    gap: 10px;
+    padding: 10px;
+    
+    li {
+        list-style: none;
+        transition: all 0.3s ease;
+        text-align: center;
+        color: $menu-text-color;
+    }
+    li:hover {
+        background-color: rgb(55, 55, 55);
+    }
+    a {
+        text-decoration: none;
+        color: $menu-text-color;
+    }
+} 
+.active-menu {
+    background-color: rgb(55, 55, 55);
+    padding: 10px;
+}
+
+@media (max-width: 1000px) {
+    .menu {
+        display: none;
+    }
+    .mobile-menu.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 100px;
+    }
+}

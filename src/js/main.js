@@ -6,5 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     hamburgare.addEventListener("click", () => {
         mobilMeny.classList.toggle("open");
+        hamburgare.classList.toggle("open");
     })
 })
